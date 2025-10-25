@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portafolio — Kenneth Ortiz</title>
+  <meta name="description" content="Portafolio minimalista de Kenneth Estuardo Ortiz Visoni" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg"></div>
+
+  <header class="topbar glass">
+    <div class="brand">
+      <div class="logo">K</div>
+      <div class="brand__text">
+        <strong>Kenneth Ortiz</strong>
+        <span>Estudiante de Ing. en Sistemas</span>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="#documentos">Documentos</a>
+      <a href="#sobre">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero wrap">
+      <div class="hero__text">
+        <h1>Hola, soy <span class="accent">Kenneth Estuardo Ortiz Visoni</span></h1>
+        <p class="muted">21 años · 2º semestre · Universidad Mariano Gálvez de Retalhuleu</p>
+        <p>Me gusta construir interfaces limpias, con color y enfoque en la experiencia.</p>
+        <div class="hero__cta">
+          <a class="btn" href="#documentos">Ir a mis documentos</a>
+          <a class="btn btn--ghost" href="#sobre">Conóceme</a>
+        </div>
+      </div>
+      <div class="hero__avatar glass">
+        <img id="avatar" src="assets/profile.jpg" alt="Foto de Kenneth" />
+        <label class="upload-photo">
+          <input type="file" id="photoInput" accept="image/*" hidden />
+          Cambiar foto
+        </label>
+      </div>
+    </section>
+
+    <!-- DOCUMENTOS -->
+    <section id="documentos" class="section wrap">
+      <header class="section__head">
+        <h2>Mis documentos</h2>
+        <p class="muted">Sube y visualiza archivos. Arrastra y suelta o usa el botón Subir. Vista ampliada y pantalla completa disponibles.</p>
+      </header>
+
+      <div class="slots">
+        
+<div class="slot glass" id="slot1" data-slot="1">
+  <div class="slot__head">
+    <div class="slot__title">
+      <span class="slot__badge">1</span>
+      <strong>Espacio 1</strong>
+    </div>
+    <div class="slot__actions">
+      <button class="iconbtn uploadBtn" title="Subir">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 3l4 4h-3v6h-2V7H8l4-4zm-7 14h14v2H5v-2z"/></svg>
+        <span>Subir</span>
+      </button>
+      <button class="iconbtn viewLargeBtn" title="Ver grande" disabled>
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M7 14H5v5h5v-2H7v-3zm12 3h-3v2h5v-5h-2v3zM7 7h3V5H5v5h2V7zm12 3h2V5h-5v2h3v3z"/></svg>
+        <span>Ver</span>
+      </button>
+      <button class="iconbtn danger deleteBtn" title="Eliminar" disabled>
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M9 3h6l1 2h5v2H3V5h5l1-2zm1 7h2v8h-2v-8zm4 0h2v8h-2v-8z"/></svg>
+        <span>Borrar</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="slot__drop" aria-label="Área para arrastrar y soltar archivos">
+    <input type="file" class="fileInput" accept=".pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.jpg,.jpeg,.png,.gif,.webp,.txt,.mp4,.webm,.ogg,.mp3,.wav" />
+    <p class="muted">Arrastra y suelta aquí, o usa <em>Subir</em></p>
+  </div>
+
+  <div class="preview"><span class="muted">Vacío</span></div>
+</div>
+
+
+<div class="slot glass" id="slot2" data-slot="2">
+  <div class="slot__head">
+    <div class="slot__title">
+      <span class="slot__badge">2</span>
+      <strong>Espacio 2</strong>
+    </div>
+    <div class="slot__actions">
+      <button class="iconbtn uploadBtn" title="Subir">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 3l4 4h-3v6h-2V7H8l4-4zm-7 14h14v2H5v-2z"/></svg>
+        <span>Subir</span>
+      </button>
+      <button class="iconbtn viewLargeBtn" title="Ver grande" disabled>
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M7 14H5v5h5v-2H7v-3zm12 3h-3v2h5v-5h-2v3zM7 7h3V5H5v5h2V7zm12 3h2V5h-5v2h3v3z"/></svg>
+        <span>Ver</span>
+      </button>
+      <button class="iconbtn danger deleteBtn" title="Eliminar" disabled>
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M9 3h6l1 2h5v2H3V5h5l1-2zm1 7h2v8h-2v-8zm4 0h2v8h-2v-8z"/></svg>
+        <span>Borrar</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="slot__drop" aria-label="Área para arrastrar y soltar archivos">
+    <input type="file" class="fileInput" accept=".pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.jpg,.jpeg,.png,.gif,.webp,.txt,.mp4,.webm,.ogg,.mp3,.wav" />
+    <p class="muted">Arrastra y suelta aquí, o usa <em>Subir</em></p>
+  </div>
+
+  <div class="preview"><span class="muted">Vacío</span></div>
+</div>
+
+
+<div class="slot glass" id="slot3" data-slot="3">
+  <div class="slot__head">
+    <div class="slot__title">
+      <span class="slot__badge">3</span>
+      <strong>Espacio 3</strong>
+    </div>
+    <div class="slot__actions">
+      <button class="iconbtn uploadBtn" title="Subir">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 3l4 4h-3v6h-2V7H8l4-4zm-7 14h14v2H5v-2z"/></svg>
+        <span>Subir</span>
+      </button>
+      <button class="iconbtn viewLargeBtn" title="Ver grande" disabled>
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M7 14H5v5h5v-2H7v-3zm12 3h-3v2h5v-5h-2v3zM7 7h3V5H5v5h2V7zm12 3h2V5h-5v2h3v3z"/></svg>
+        <span>Ver</span>
+      </button>
+      <button class="iconbtn danger deleteBtn" title="Eliminar" disabled>
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M9 3h6l1 2h5v2H3V5h5l1-2zm1 7h2v8h-2v-8zm4 0h2v8h-2v-8z"/></svg>
+        <span>Borrar</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="slot__drop" aria-label="Área para arrastrar y soltar archivos">
+    <input type="file" class="fileInput" accept=".pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.jpg,.jpeg,.png,.gif,.webp,.txt,.mp4,.webm,.ogg,.mp3,.wav" />
+    <p class="muted">Arrastra y suelta aquí, o usa <em>Subir</em></p>
+  </div>
+
+  <div class="preview"><span class="muted">Vacío</span></div>
+</div>
+
+
+<div class="slot glass" id="slot4" data-slot="4">
+  <div class="slot__head">
+    <div class="slot__title">
+      <span class="slot__badge">4</span>
+      <strong>Espacio 4</strong>
+    </div>
+    <div class="slot__actions">
+      <button class="iconbtn uploadBtn" title="Subir">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 3l4 4h-3v6h-2V7H8l4-4zm-7 14h14v2H5v-2z"/></svg>
+        <span>Subir</span>
+      </button>
+      <button class="iconbtn viewLargeBtn" title="Ver grande" disabled>
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M7 14H5v5h5v-2H7v-3zm12 3h-3v2h5v-5h-2v3zM7 7h3V5H5v5h2V7zm12 3h2V5h-5v2h3v3z"/></svg>
+        <span>Ver</span>
+      </button>
+      <button class="iconbtn danger deleteBtn" title="Eliminar" disabled>
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M9 3h6l1 2h5v2H3V5h5l1-2zm1 7h2v8h-2v-8zm4 0h2v8h-2v-8z"/></svg>
+        <span>Borrar</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="slot__drop" aria-label="Área para arrastrar y soltar archivos">
+    <input type="file" class="fileInput" accept=".pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.jpg,.jpeg,.png,.gif,.webp,.txt,.mp4,.webm,.ogg,.mp3,.wav" />
+    <p class="muted">Arrastra y suelta aquí, o usa <em>Subir</em></p>
+  </div>
+
+  <div class="preview"><span class="muted">Vacío</span></div>
+</div>
+
+
+<div class="slot glass" id="slot5" data-slot="5">
+  <div class="slot__head">
+    <div class="slot__title">
+      <span class="slot__badge">5</span>
+      <strong>Espacio 5</strong>
+    </div>
+    <div class="slot__actions">
+      <button class="iconbtn uploadBtn" title="Subir">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 3l4 4h-3v6h-2V7H8l4-4zm-7 14h14v2H5v-2z"/></svg>
+        <span>Subir</span>
+      </button>
+      <button class="iconbtn viewLargeBtn" title="Ver grande" disabled>
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M7 14H5v5h5v-2H7v-3zm12 3h-3v2h5v-5h-2v3zM7 7h3V5H5v5h2V7zm12 3h2V5h-5v2h3v3z"/></svg>
+        <span>Ver</span>
+      </button>
+      <button class="iconbtn danger deleteBtn" title="Eliminar" disabled>
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M9 3h6l1 2h5v2H3V5h5l1-2zm1 7h2v8h-2v-8zm4 0h2v8h-2v-8z"/></svg>
+        <span>Borrar</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="slot__drop" aria-label="Área para arrastrar y soltar archivos">
+    <input type="file" class="fileInput" accept=".pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.jpg,.jpeg,.png,.gif,.webp,.txt,.mp4,.webm,.ogg,.mp3,.wav" />
+    <p class="muted">Arrastra y suelta aquí, o usa <em>Subir</em></p>
+  </div>
+
+  <div class="preview"><span class="muted">Vacío</span></div>
+</div>
+
+
+<div class="slot glass" id="slot6" data-slot="6">
+  <div class="slot__head">
+    <div class="slot__title">
+      <span class="slot__badge">6</span>
+      <strong>Espacio 6</strong>
+    </div>
+    <div class="slot__actions">
+      <button class="iconbtn uploadBtn" title="Subir">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 3l4 4h-3v6h-2V7H8l4-4zm-7 14h14v2H5v-2z"/></svg>
+        <span>Subir</span>
+      </button>
+      <button class="iconbtn viewLargeBtn" title="Ver grande" disabled>
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M7 14H5v5h5v-2H7v-3zm12 3h-3v2h5v-5h-2v3zM7 7h3V5H5v5h2V7zm12 3h2V5h-5v2h3v3z"/></svg>
+        <span>Ver</span>
+      </button>
+      <button class="iconbtn danger deleteBtn" title="Eliminar" disabled>
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M9 3h6l1 2h5v2H3V5h5l1-2zm1 7h2v8h-2v-8zm4 0h2v8h-2v-8z"/></svg>
+        <span>Borrar</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="slot__drop" aria-label="Área para arrastrar y soltar archivos">
+    <input type="file" class="fileInput" accept=".pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.jpg,.jpeg,.png,.gif,.webp,.txt,.mp4,.webm,.ogg,.mp3,.wav" />
+    <p class="muted">Arrastra y suelta aquí, o usa <em>Subir</em></p>
+  </div>
+
+  <div class="preview"><span class="muted">Vacío</span></div>
+</div>
+
+
+<div class="slot glass" id="slot7" data-slot="7">
+  <div class="slot__head">
+    <div class="slot__title">
+      <span class="slot__badge">7</span>
+      <strong>Espacio 7</strong>
+    </div>
+    <div class="slot__actions">
+      <button class="iconbtn uploadBtn" title="Subir">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 3l4 4h-3v6h-2V7H8l4-4zm-7 14h14v2H5v-2z"/></svg>
+        <span>Subir</span>
+      </button>
+      <button class="iconbtn viewLargeBtn" title="Ver grande" disabled>
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M7 14H5v5h5v-2H7v-3zm12 3h-3v2h5v-5h-2v3zM7 7h3V5H5v5h2V7zm12 3h2V5h-5v2h3v3z"/></svg>
+        <span>Ver</span>
+      </button>
+      <button class="iconbtn danger deleteBtn" title="Eliminar" disabled>
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M9 3h6l1 2h5v2H3V5h5l1-2zm1 7h2v8h-2v-8zm4 0h2v8h-2v-8z"/></svg>
+        <span>Borrar</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="slot__drop" aria-label="Área para arrastrar y soltar archivos">
+    <input type="file" class="fileInput" accept=".pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.jpg,.jpeg,.png,.gif,.webp,.txt,.mp4,.webm,.ogg,.mp3,.wav" />
+    <p class="muted">Arrastra y suelta aquí, o usa <em>Subir</em></p>
+  </div>
+
+  <div class="preview"><span class="muted">Vacío</span></div>
+</div>
+
+
+<div class="slot glass" id="slot8" data-slot="8">
+  <div class="slot__head">
+    <div class="slot__title">
+      <span class="slot__badge">8</span>
+      <strong>Espacio 8</strong>
+    </div>
+    <div class="slot__actions">
+      <button class="iconbtn uploadBtn" title="Subir">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 3l4 4h-3v6h-2V7H8l4-4zm-7 14h14v2H5v-2z"/></svg>
+        <span>Subir</span>
+      </button>
+      <button class="iconbtn viewLargeBtn" title="Ver grande" disabled>
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M7 14H5v5h5v-2H7v-3zm12 3h-3v2h5v-5h-2v3zM7 7h3V5H5v5h2V7zm12 3h2V5h-5v2h3v3z"/></svg>
+        <span>Ver</span>
+      </button>
+      <button class="iconbtn danger deleteBtn" title="Eliminar" disabled>
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M9 3h6l1 2h5v2H3V5h5l1-2zm1 7h2v8h-2v-8zm4 0h2v8h-2v-8z"/></svg>
+        <span>Borrar</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="slot__drop" aria-label="Área para arrastrar y soltar archivos">
+    <input type="file" class="fileInput" accept=".pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.jpg,.jpeg,.png,.gif,.webp,.txt,.mp4,.webm,.ogg,.mp3,.wav" />
+    <p class="muted">Arrastra y suelta aquí, o usa <em>Subir</em></p>
+  </div>
+
+  <div class="preview"><span class="muted">Vacío</span></div>
+</div>
+
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre" class="section wrap">
+      <header class="section__head">
+        <h2>Sobre mí</h2>
+      </header>
+      <div class="about glass">
+        <p>
+          Soy estudiante de <strong>Ingeniería en Sistemas</strong>. Me interesan el desarrollo web, el diseño de interfaces y las buenas prácticas.
+          Este portafolio es un espacio para compartir mis archivos, ejercicios y proyectos.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section wrap">
+      <header class="section__head"><h2>Contacto</h2></header>
+      <div class="contact glass">
+        <a class="btn" href="mailto:tucorreo@ejemplo.com">📧 Email</a>
+        <a class="btn btn--ghost" href="#" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn--ghost" href="#" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer glass">
+    <div class="wrap">© <span id="year"></span> Kenneth E. Ortiz — Portafolio</div>
+  </footer>
+
+  <!-- Lightbox / Modal para ver en grande -->
+  <div id="lightbox" class="lightbox" hidden>
+    <div class="lightbox__backdrop" data-close></div>
+    <div class="lightbox__content glass" role="dialog" aria-modal="true" aria-labelledby="lbTitle">
+      <div class="lightbox__topbar">
+        <h3 id="lbTitle" class="lightbox__title">Vista ampliada</h3>
+        <div class="lightbox__btns">
+          <button id="btnFs" class="btn btn--ghost" title="Pantalla completa">⛶ Pantalla completa</button>
+          <button id="btnExitFs" class="btn btn--ghost" title="Salir de pantalla completa" hidden>↩️ Volver</button>
+          <button class="lightbox__close" data-close aria-label="Cerrar">×</button>
+        </div>
+      </div>
+      <div id="lightboxBody" class="lightbox__body"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
